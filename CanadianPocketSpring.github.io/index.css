@@ -1,0 +1,289 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.backGround {
+    background: linear-gradient(to left, rgb(227, 242, 255), rgb(176, 205, 255));
+    border-radius: 0 0 30px 30px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    max-width: 1170px;
+    width: 95%;
+}
+.headerBackGround{
+    background: linear-gradient(to left, rgb(227, 242, 255), rgb(176, 205, 255));
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoCPS{
+    min-width: 250px;
+    width: 30%;
+    max-width: 300px; 
+}
+
+.headerButtons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+
+}
+.icon{
+    width: 32px;
+    display: inline;
+}
+.headerPositions{
+    color: black;
+    text-decoration: none;
+}
+
+
+.burgerMenu{
+    display: none;
+}
+
+
+.firstBlock{
+    background-image: url(hard.jpg);
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.firstTitle{
+    padding-top: 15em;
+}
+
+
+.title{
+    color: aliceblue;
+    font-size: 60px;
+}
+.titleDes{
+    color: aliceblue;
+    font-size: 30px;
+}
+
+.firstAdress {
+    color: aliceblue;
+    font-size: 25px;
+}
+
+.button__down {
+    width: 50px;
+    margin-bottom: 2em;
+    filter: drop-shadow(0 0 0px rgba(255, 255, 255, 0.616));
+    transition: filter 0.3s;
+}
+.button__down:hover {
+    filter: drop-shadow(0 0 30px rgb(0, 0, 0));
+}
+
+.secondTitle{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.videoBlock{
+    margin: 5em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.alfaTitle{
+    margin: 200px auto 200px auto;
+    font-weight: 400;
+    font-size: 55px;
+}
+
+
+.cardsSection {
+    display: flex;
+    flex-wrap: wrap;
+}
+.productCard{
+    display: flex;
+    
+    /* margin: 50px 50px;
+    padding: 1em;
+    height: 400px;
+    width: 450px;
+    max-width: 500px;
+    border: 1px solid black;
+    border-radius: 1em;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.292);
+    display: flex;
+    align-items: center; */
+}
+.productCardImg{
+    width: 350px;
+    height: auto;
+    margin: 0 30px 80px 0;
+}
+#firstProductCardImg {
+    width: 350px;
+    height: auto;
+    margin: 0 30px 80px 0;
+}
+.productCardTexts h1{
+    margin: 0;
+}
+
+.productCardDescription{
+    min-width: 304px;
+    padding-bottom: 10px;
+}
+
+
+
+.carouselContainerMain {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+#carouselExampleIndicators {
+    width: 80%;
+}
+
+
+.map{
+    width: 100%;
+    margin-top: 100px;
+}
+
+/* footer */
+
+
+.footer__block {
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    padding-top: 7em;
+    padding-bottom: 3em;
+}
+
+.footer__block a {
+    color: aliceblue;
+}
+
+
+.footer__text {
+    max-width: 70%;
+    text-align: center;
+}
+
+.dno {
+    margin-top: 17em;
+}
+.spring{
+    display: inline;
+}
+
+.language-switch {
+    position: fixed;
+    bottom: -2px;
+    left: -1px;
+}
+.language-switch button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: antiquewhite;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+.language-switch button:hover{
+    color: red;
+}
+
+
+
+/* Contact page  */
+
+.mainContactPage{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 500px;
+}
+.photoOfComp{
+    max-width: 100%;
+}
+
+@media screen and (max-width: 768px){
+
+    .headerPositions{
+        display: block;
+        padding-top: 10px;
+    }
+    .icon{
+        display: block;
+        margin: auto;
+    }
+    .headerButtons{
+        display: block;
+        width: auto;
+    }
+    .navbar{
+        padding: 10px;
+    }
+    .firstTitle{
+    padding-top: 5em;
+    }
+    .titleDes{
+        color: aliceblue;
+        margin: 50px 0px;
+    }
+    .title{
+        white-space: normal;
+    }
+    .video{
+        padding: 1em;
+        width: 90%;   
+    }
+    .productCard{
+        flex-wrap: wrap;
+    }
+    .productCardImg {
+        margin: 100px 0 20px 0;
+        width: 100%;
+        height: auto;
+    }
+    #firstProductCardImg {
+        margin: 30px 0 20px 0;
+        width: 100%;
+        height: auto;
+    }
+    .carouselContainerMain {
+        display: inline;
+        justify-content: space-around;
+        padding-bottom: 50px;
+    }
+    #carouselExampleIndicators {
+        width: 100%;
+    }
+}
+
